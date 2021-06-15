@@ -1,7 +1,6 @@
 #ifndef FGN_TRACE_H
 #define FGN_TRACE_H
 
-// Defined by FGN
 #include <stdio.h>
 #define FGN_TRACE_SWITCH
 
