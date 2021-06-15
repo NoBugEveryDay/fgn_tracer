@@ -7,7 +7,12 @@
 
 #define main(...) fgn_stack_depth=0; int main(__VA_ARGS__)
 
-#define FGN_MPI_CHECK() int rank; MPI_Comm_rank(MPI_COMM_WORLD,&rank); if (rank==0)
+#ifdef MPI_INT
+    // Only the first process print 
+    #define FGN_MPI_CHECK() int rank; MPI_Comm_rank(MPI_COMM_WORLD,&rank); if (rank==0)
+#else
+    #define FGN_MPI_CHECK()
+#endif
 
 #ifdef FGN_TRACE_SWITCH
     extern int fgn_stack_depth;
