@@ -6,7 +6,7 @@ fgn_tracer is a simple tracer for you when you start to analyze some huge C code
 
 ## Feature
 
-![example.png](https://github.com/NoBugEveryDay/fgn_tracer/example/example.png)
+![example.png](https://raw.githubusercontent.com/NoBugEveryDay/fgn_tracer/master/example/example.png)
 
 - Trace any function call you want.
 - Print any variable at anywhere you want.
